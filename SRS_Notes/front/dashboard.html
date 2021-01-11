@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>DashBoard</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- custom nav with profile image CSS -->
+    <link rel="stylesheet" href="css/navigation.css">
+
+</head>
+
+<body>
+
+       <!-- Navigation Bar -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg white-navbar navbar-fixed-height fixed-top">
+
+            <div class="container">
+                <div class="row">
+
+                    <!-- Logo -->
+                    <div class="navbar-header col-lg-3 col-10">
+
+                        <a class="navbar-brand text-left" href="#">
+                            <img src="images/home/logo.png" alt="logo">
+                        </a>
+
+                    </div>
+
+                    <button class="navbar-toggler collapsed col-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="mobile-nav-close-btn">&times;</span>
+                        <span class="mobile-nav-open-btn">&#9776;</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse col-lg-9" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="search-notes.html">Search Notes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sell Your Notes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="buyer-request.html">Buyer Requests</a></li>
+                            <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                            <li class="nav-item profile-dropdown dropdown">
+                                <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/notes-details/reviewer-1.png" class="rounded-circle">
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="user-profile.html">My Profile</a>
+                                    <a class="dropdown-item" href="my-downloads.html">My Downloads</a>
+                                    <a class="dropdown-item" href="my-sold-notes.html">My Sold Notes</a>
+                                    <a class="dropdown-item" href="my-rejected-notes.html">My Rejected Notes</a>
+                                    <a class="dropdown-item" href="change-password.html">Change Password</a>
+                                    <a class="dropdown-item logout" href="#">Logout</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <!-- Navigation Bar END -->
+
+
+    <!-- Dashboard section -->
+    <section id="dashboard">
+        <div class="content-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                        <div class="title">
+                            <h3 class="text-left">Dashboard</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                        <div class="add-note-btn text-right">
+                            <a class="btn btn-add-note" href="#" title="Add Note" role="button">Add Note</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-2 col-lg-2 col-12 col-sm-12 earning-box">
+                        <div class="my-earning-box text-center" id="my-earning">
+                            <img src="images/Dashboard/my-earning.png">
+                            <h5>My Earning</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-12 col-sm-12 box-lg">
+                        <div class="dashboard-box dashboard-box-lg">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-12 text-center">
+                                    <h3 class="heading-numeric">100</h3>
+                                    <p>Number of Notes Sold</p>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-12 text-center">
+                                    <h3 class="heading-numeric">$10,000</h3>
+                                    <p>Money Earned</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-12 col-sm-12 same-box">
+                        <div class="dashboard-box notes-earning-info text-center">
+                            <h3 class="heading-numeric">100</h3>
+                            <p>My Downloads</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-12 col-sm-12 same-box">
+                        <div class="dashboard-box notes-earning-info text-center">
+                            <h3 class="heading-numeric">12</h3>
+                            <p>My Rejected Notes</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-12 col-sm-12 same-box">
+                        <div class="dashboard-box notes-earning-info text-center">
+                            <h3 class="heading-numeric">100</h3>
+                            <p>Buyer Request</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DashBoard Ends -->
+
+    <!-- In Progress Notes Table Section -->
+    <section id="in-progress-notes">
+        <div class="content-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-12 col-sm-12">
+                        <div class="horizontal-heading-sm">
+                            <h3>In Progress Notes</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-12">
+                        <div class="row text-right">
+                            <div class="col-md-8 col-lg-8 col-sm-8 col-8 table-search-bar">
+                                <div class="form-group">
+                                    <input type="search" class="form-control" id="search" placeholder="Search">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-4 col-sm-4 table-search-btn">
+                                <div id="search-btn">
+                                    <a class="btn search-btn" href="#" title="search" role="button">SEARCH</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 co-12">
+                        <div class="in-progress-table table-responsive">
+
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="table-header dashboard-date">ADDED DATE</th>
+                                        <th scope="col" class="table-header">TITLE</th>
+                                        <th scope="col" class="table-header">CATEGORY</th>
+                                        <th scope="col" class="table-header">STATUS</th>
+                                        <th scope="col" class="table-header">ACTIONS</th>
+                                        <th scope="col" class="table-header"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="height: 50px;">
+                                        <td>09-10-2020</td>
+                                        <td>Data Science</td>
+                                        <td>Science</td>
+                                        <td>Draft</td>
+                                        <td class="text-center"><a href="#"><img src="images/Dashboard/edit.png" alt="eye"></a>
+                                            <t> </t><a href="#"><img src="images/Dashboard/delete.png" alt="delete"></a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr style="height: 50px;">
+                                        <td>10-10-2020</td>
+                                        <td>Accounts</td>
+                                        <td>Commerce</td>
+                                        <td>In Review</td>
+                                        <td class="text-center"><a href="#"><img src="images/Dashboard/eye.png" alt="eye"></a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr style="height: 50px;">
+                                        <td>11-10-2020</td>
+                                        <td>Social Studies</td>
+                                        <td>Social</td>
+                                        <td>Submitted</td>
+                                        <td class="text-center"><a href="#"><img src="images/Dashboard/eye.png" alt="eye"></a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr style="height: 50px;">
+                                        <td>12-10-2020</td>
+                                        <td>AI</td>
+                                        <td>IT</td>
+                                        <td>Submitted</td>
+                                        <td class="text-center"><a href="#"><img src="images/Dashboard/eye.png" alt="eye"></a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr style="height: 50px;">
+                                        <td>13-10-2020</td>
+                                        <td>Lorem ipsum dolor sit amet</td>
+                                        <td>Lorem</td>
+                                        <td>Draft</td>
+                                        <td class="text-center"><a href="#"><img src="images/Dashboard/edit.png" alt="eye"></a>
+                                            <t> </t><a href="#"><img src="images/Dashboard/delete.png" alt="delete"></a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-center">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><img src="images/Search/left-arrow.png" alt="left arrow"> </span>
+                                </a>
+                            </li>
+                            <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><img src="images/Search/right-arrow.png" alt="left arrow"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- In Progress Notes Table Section Ends -->
+
+
+    <!-- Published Notes Table Section -->
+    <section id="published-notes">
+        <div class="content-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-12 col-sm-12">
+                        <div class="horizontal-heading-sm">
+                            <h3>Published Notes</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12 col-sm-12">
+                        <div class="row text-right">
+                            <div class="col-md-8 col-lg-8 col-8 col-sm-8 table-search-bar">
+                                <div class="form-group">
+                                    <input type="search" class="form-control" id="search" placeholder="Search">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-4 col-sm-4 table-search-btn">
+                                <div id="search-btn">
+                                    <a class="btn search-btn" href="#" title="search" role="button">SEARCH</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                        <div class="published-notes-table table-responsive">
+
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="table-header dashboard-date">ADDED DATE</th>
+                                        <th scope="col" class="table-header">TITLE</th>
+                                        <th scope="col" class="table-header">CATEGORY</th>
+                                        <th scope="col" class="table-header">SELL TYPE</th>
+                                        <th scope="col" class="table-header">PRICE</th>
+                                        <th scope="col" class="table-header">ACTIONS</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="height: 50px;">
+                                        <td>09-10-2020</td>
+                                        <td>Data Science</td>
+                                        <td>Science</td>
+                                        <td>Paid</td>
+                                        <td>$575</td>
+                                        <td class="text-center"><a href="#"><img src="images/Dashboard/eye.png" alt="eye"></a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr style="height: 50px;">
+                                        <td>09-10-2020</td>
+                                        <td>Data Science</td>
+                                        <td>Science</td>
+                                        <td>Free</td>
+                                        <td>$0</td>
+                                        <td class="text-center"><a href="#"><img src="images/Dashboard/eye.png" alt="eye"></a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr style="height: 50px;">
+                                        <td>09-10-2020</td>
+                                        <td>Data Science</td>
+                                        <td>Science</td>
+                                        <td>Free</td>
+                                        <td>$0</td>
+                                        <td class="text-center"><a href="#"><img src="images/Dashboard/eye.png" alt="eye"></a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr style="height: 50px;">
+                                        <td>09-10-2020</td>
+                                        <td>Data Science</td>
+                                        <td>Science</td>
+                                        <td>Paid</td>
+                                        <td>$3542</td>
+                                        <td class="text-center"><a href="#"><img src="images/Dashboard/eye.png" alt="eye"></a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr style="height: 50px;">
+                                        <td>09-10-2020</td>
+                                        <td>Data Science</td>
+                                        <td>Science</td>
+                                        <td>Free</td>
+                                        <td>$0</td>
+                                        <td class="text-center"><a href="#"><img src="images/Dashboard/eye.png" alt="eye"></a></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-center">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><img src="images/Search/left-arrow.png" alt="left arrow"> </span>
+                                </a>
+                            </li>
+                            <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><img src="images/Search/right-arrow.png" alt="left arrow"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Published Notes Table Section Ends -->
+
+    <!-- Section Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <!-- Copyright -->
+                <div class="col-md-7 col-sm-8 footer-text text-left">
+                    <p>Copyright &copy; TatvaSoft All Rights Reserved By</p>
+                </div>
+
+                <!-- Social Icon -->
+                <div class="col-md-5 col-sm-4 foot-icon text-right">
+                    <ul class="social-list">
+                        <li><a href="#"><img src="images/User-Profile/facebook.png" alt="facbook"></a></li>
+                        <li><a href="#"><img src="images/User-Profile/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="images/User-Profile/linkedin.png" alt="linkedin"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Section Footer END -->
+
+
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
