@@ -22,9 +22,9 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;  // This is fixed port for gmail SMTP
  
-    $config_email = 'manvarhappy66@gmail.com';
+    $config_email = '';
     $mail->Username = $config_email; // YOUR gmail email which will be used as sender and PHPMailer configuration 
-    $mail->Password = 'HarryPotter123';  
+    $mail->Password = '';  
 
  
     // Sender and recipient settings
