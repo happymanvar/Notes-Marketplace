@@ -1,0 +1,1512 @@
+/* Extra Small Devices */
+
+@media (max-width: 576px) {
+    /* ========== general all heading ===================*/
+    .horizontal-heading h3 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #6255a5;
+        margin-bottom: 25px;
+    }
+    .horizontal-heading-sm h3 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #6255a5
+    }
+    /* ================================== Navigation ==================================== */
+    .navbar {
+        display: block;
+    }
+    nav .container {
+        max-width: 100%;
+        margin: 0 !important;
+    }
+    .navbar-brand {
+        padding-left: 15px;
+    }
+    #navbarSupportedContent {
+        background: #fff;
+    }
+    .navbar-toggler {
+        padding-right: 15px !important;
+    }
+    nav .dropdown-menu {
+        border: none;
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    }
+    nav li.profile-dropdown .dropdown-menu a.logout:hover {
+        color: #6255a5;
+    }
+    nav .dropdown-item {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+    nav .dropdown-menu .dropdown-item:hover,
+    nav .dropdown-menu .dropdown-item:focus,
+    nav .dropdown-menu .dropdown-item:active {
+        color: #6255a5 !important;
+        background-color: #fff !important;
+    }
+    nav .profile-dropdown div.dropdown-menu.show {
+        -webkit-transform: translate3d(15px, 0, 0) !important;
+        transform: translate3d(15px, 0, 0) !important;
+    }
+    ul.navbar-nav {
+        margin-top: 15px;
+    }
+    ul.navbar-nav li {
+        margin-bottom: 15px;
+    }
+    /* ================== Login ===================== */
+    /* ================== Signup ==================== */
+    /* ================== forgot password ==================== */
+    /* ================== change password ==================== */
+    .form-content {
+        padding: 15px 25px;
+    }
+    .white-box {
+        width: 350px;
+    }
+    .login-heading h3,
+    .signup-heading h3,
+    .forgot-password-heading h3,
+    .change-password-heading h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .login-heading p,
+    .signup-heading p,
+    .forgot-password-heading p,
+    .change-password-heading p {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 20px;
+    }
+    #passwordHelpBlock {
+        font-size: 12px;
+    }
+    .sign-up-text {
+        font-size: 13px;
+    }
+    .change-password-heading p {
+        font-size: 11px;
+    }
+    .password-forgotpass a {
+        color: #6255a5;
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .form-check .form-check-input {
+        border: 1px solid #d1d1d1;
+        height: 20px;
+        width: 20px;
+        margin-top: 3px;
+        border-radius: 3px;
+    }
+    .form-check .form-check-label {
+        font-size: 13px;
+        line-height: 17px;
+        margin: -38px 0px 10px 6px;
+    }
+    .pre-login-btns {
+        height: 27px;
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 20px;
+    }
+    .form-group input[type=email],
+    .form-group input[type=password],
+    .form-group input[type=text] {
+        width: 100%;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #000;
+    }
+    #signup .success {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 19px;
+        color: green;
+    }
+    .form-group .forgot-password {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-left: 150px;
+        color: #6255a5;
+        float: right;
+    }
+    .field-icon {
+        width: 25px;
+        height: 18px;
+        float: right;
+        position: relative;
+        top: -26px;
+        right: 15px;
+    }
+    /* ======================== home page ================== */
+    .head-heading {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .head-text {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 380px;
+        line-height: 25px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .btn-head {
+        width: 110px;
+        font-size: 9px;
+        padding: 6px 12px;
+        border: 2px solid #fff;
+    }
+    .btn-head:hover,
+    .btn-head:focus {
+        color: #fff;
+        background-color: #6255a5;
+        border-color: #6255a5;
+    }
+    /* about */
+    .about-right p {
+        font-size: 12px;
+        font-weight: 400;
+        color: #333333;
+    }
+    .about-right p:first-child {
+        margin-bottom: 25px;
+    }
+    /* work */
+    .work-image {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    .work-image img {
+        width: 30px;
+        height: 30px;
+    }
+    .work-item h5 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .work-item p {
+        margin: 10px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .btn-work {
+        width: 100px;
+        margin: 0px 0px 20px 0px;
+        font-size: 10px;
+    }
+    .testimonial {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.06);
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .test-name-desc h6 {
+        font-style: normal;
+        margin-top: 0px;
+    }
+    .testimonial .test-name-desc {
+        margin-top: 3px;
+        padding-left: 3px;
+    }
+    .testimonial p {
+        font-style: italic;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .test-name-desc h5 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .testimonial img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+    #testimonials .content-box {
+        padding-bottom: 30px !important;
+    }
+    /* ======================= footer ===========================*/
+    /* ======================= footer ===========================*/
+    footer {
+        padding: 10px 0 5px 0;
+    }
+    .footer-text p {
+        font-size: 13px;
+    }
+    ul.social-list li a {
+        line-height: 20px;
+        width: 30px;
+        margin-right: 3px;
+        height: 30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+    }
+    ul.social-list li a img {
+        align-self: auto;
+    }
+    /* ====================== search Notes ================== */
+    .search-title h3 {
+        font-size: 19px;
+        line-height: 25px;
+        margin-bottom: 18px;
+    }
+    .search-content {
+        background-color: #f9f9f9;
+        height: 230px;
+        width: 100%;
+    }
+    .search-container {
+        margin: 15px;
+    }
+    .search-container input[type=search] {
+        margin-bottom: 10px;
+        height: 30px;
+    }
+    .search-container input::-webkit-input-placeholder,
+    .search-container option {
+        font-size: 14px;
+    }
+    .search-container select {
+        height: 30px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    #note-list .conent-box-sm {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .note-results {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .notes {
+        margin-bottom: 10px;
+    }
+    .note-info {
+        padding: 10px;
+    }
+    .note-title p {
+        font-size: 17px;
+        margin-top: 5px;
+        margin-bottom: 8px;
+        height: 65px;
+    }
+    .note-table ul.detail li {
+        font-size: 14px;
+        line-height: 15px;
+        padding-bottom: 8px;
+    }
+    .note-table ul.detail li img {
+        width: 22px;
+        margin-right: 10px;
+        padding: 2px 0px 5px 0px;
+    }
+    .note-table ul.detail li:last-child {
+        font-size: 14px;
+    }
+    .rate {
+        height: 17px;
+        line-height: 30px;
+    }
+    rate:not(:checked)>label {
+        font-size: 25px;
+    }
+    .rating-text {
+        line-height: 38px;
+        margin: 0px 0px 0px 5px;
+        font-size: 13px;
+        display: inline-block;
+    }
+    /* ========================== pagination (comman) =========================== */
+    .pagination {
+        margin: 20px 0px;
+    }
+    li.page-item {
+        margin: 0 1px;
+    }
+    .page-link img {
+        width: 9px;
+        height: 14px;
+    }
+    a.page-link {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .page-link:focus,
+    .page-link:hover {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    }
+    .pagination .active a.page-link {
+        background: #6255a5;
+        color: #fff;
+        border-radius: 50%;
+    }
+    .pagination a {
+        margin: 2px 2px;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+    }
+    .page-item.disabled .page-link {
+        color: #868e96;
+        pointer-events: none;
+        cursor: auto;
+        background-color: #CEFFCE;
+        border-color: #718393;
+    }
+    /* =================== Note Detail ======================== */
+    .note-image img {
+        height: 240px;
+        width: 190px;
+    }
+    .horizontal-heading-sm {
+        padding-left: 30px;
+    }
+    .note-heading h2 {
+        font-size: 26px;
+        line-height: 38px;
+        margin-bottom: 5px;
+    }
+    .note-heading p {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0px 0px 18px 0px;
+    }
+    .note-description p {
+        font-size: 12px;
+        margin-bottom: 18px;
+    }
+    .btn-download {
+        width: 170px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 4px;
+        padding: 12px 20px;
+        text-transform: capitalize;
+    }
+    .note-detail-rigt {
+        margin-top: 20px;
+    }
+    .left-side p,
+    .right-side p {
+        font-size: 13px;
+        color: #333333;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 3px;
+    }
+    .right-side p {
+        color: #6255a5;
+        font-weight: 600;
+    }
+    .right-side {
+        text-align: left;
+    }
+    .note-rating .stars {
+        margin-top: 0px;
+    }
+    .note-rating p {
+        font-size: 16px;
+        padding: 0px;
+    }
+    .bottom-border {
+        border-bottom: 2px solid #d1d1d1;
+        margin: 20px 18px 0px 18px;
+    }
+    .note-preview {
+        padding-top: 0px;
+    }
+    .note-preview-left {
+        margin: 0px 20px;
+    }
+    .note-preview-left .horizontal-heading-sm,
+    .note-preview-right .horizontal-heading-sm {
+        padding-left: 0px;
+    }
+    .preview {
+        padding: 0px 20px;
+    }
+    .note-preview-right {
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+    .note-detail-preview {
+        border: 1px solid #333333;
+        border-radius: 3px;
+        width: 100%;
+        height: 450px;
+    }
+    .review-container {
+        padding: 10px;
+        border: 1px solid #d1d1d1;
+        border-radius: 3px;
+        height: 460px;
+        margin: 1px;
+    }
+    .review {
+        padding: 5px;
+    }
+    .review-detail {
+        padding-right: 5px;
+        padding-left: 20px;
+    }
+    .user-image {
+        padding-left: 10px;
+    }
+    .review-detail h4 {
+        margin-bottom: 3px;
+        font-size: 16px;
+    }
+    .review-detail p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    /* thanks modal */
+    .modal-header {
+        padding: 8px;
+    }
+    .modal-title {
+        margin: 20px 10px 0px 10px;
+    }
+    .modal-body {
+        padding: 0px 35px 20px 25px;
+    }
+    .modal-title img {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .modal-title h3 {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #6255a5;
+        display: inline-block;
+        text-align: center;
+    }
+    .modal-body p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #333333;
+    }
+    .modal-body h5 {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #333333;
+    }
+    /* ===================================== dashboard ======================== */
+    .title h3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .add-note-btn a {
+        width: 100px;
+        height: 28px;
+        font-size: 14px;
+        line-height: 18px;
+        font-style: 700;
+        padding: 5px 10px;
+    }
+    .my-earning-box {
+        border: 1px solid #d1d1d1;
+        border-radius: 3px;
+        padding: 15px 15px 5px 15px;
+        height: 100%;
+        margin: 10px;
+    }
+    .dashboard-box {
+        border: 1px solid #d1d1d1;
+        border-radius: 3px;
+        padding: 15px 15px 5px 15px;
+        height: 100%;
+        margin: 10px;
+    }
+    .dashboard-box-lg {
+        border-radius: 3px;
+    }
+    .earning-box {
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+    .box-lg {
+        padding: 10px;
+        margin-top: 0px;
+    }
+    .my-earning-box h5 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .heading-numeric {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .dashboard-box p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .same-box {
+        margin-bottom: 10px;
+    }
+    #in-progress-notes .content-box {
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+    #in-progress-notes .horizontal-heading-sm,
+    #published-notes .horizontal-heading-sm {
+        padding-left: 0px;
+    }
+    #in-progress-notes input[type="search"],
+    #published-notes input[type="search"] {
+        width: 90%;
+        height: 35px;
+    }
+    #search-btn a {
+        width: 90%;
+        height: 35px;
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .table {
+        font-size: 13px;
+    }
+    .table-header {
+        font-size: 15px;
+    }
+    /* ======================= My Downloads ============================*/
+    /* ======================= My sold notes ============================*/
+    /* ======================= My rejected notes ============================*/
+    /* ======================= buyer request ============================*/
+    #my-download input[type="search"],
+    #my-rejected-notes input[type="search"],
+    #my-sold-notes input[type="search"],
+    #buyer-request input[type="search"] {
+        width: 90%;
+        height: 35px;
+    }
+    /*----------------- add review modal --------------- */
+    /* ============ thanks modal ===================== */
+    #addreview .modal-dialog {
+        margin-top: 90px;
+    }
+    #addreview .modal-header {
+        padding: 20px 10px 0px 35px;
+    }
+    #addreview .modal-title {
+        text-align: center;
+        margin: 0px 20px 0px 0px;
+        padding: 0px;
+    }
+    #addreview .modal-body {
+        padding: 20px 35px 15px 35px;
+    }
+    #addreview .modal-title h3 {
+        font-size: 21px;
+        line-height: 24px;
+    }
+    .modal-body form {
+        margin-top: 25px;
+    }
+    .modal-body .form-group label {
+        margin-bottom: 6px;
+    }
+    .modal-body .form-group textarea {
+        height: 100px;
+    }
+    .modal-body .btn-submit a {
+        width: 110px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+    .modal-body .rate {
+        height: 35px;
+        padding: 0px 6px;
+    }
+    .modal-body .rate:not(:checked)>label {
+        width: 27px;
+        height: 29px;
+        margin-right: 7px;
+        font-size: 32px;
+    }
+    /* ======================  FAQ  ===================== */
+    .faq-header-statement h3 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        display: inline-block;
+    }
+    .card {
+        margin-bottom: 10px;
+        border: none;
+    }
+    .card-header {
+        padding: 3px 0 0 0;
+        height: auto;
+        border-bottom: none;
+        display: flex;
+    }
+    .card-header h6 {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 8px 20px 10px 20px;
+    }
+    .card-header a {
+        padding: 0;
+    }
+    .card-header a img {
+        padding: 8px;
+        width: 30px;
+        height: 30px;
+    }
+    .card-body p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    /* =========== comntect us ================= */
+    .header-statement h3 {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        display: inline-block;
+    }
+    .form-heading p {
+        font-size: 13px;
+    }
+    /* =================== User Profile ================ */
+    /* =========================== add notes  ======================== */
+    #basic-details .horizontal-heading h3,
+    #basic-notes-details .horizontal-heading h3 {
+        margin-bottom: 25px;
+    }
+    #head-part-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        -webkit-transform: translateY(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+    .form-group-heading h3 {
+        font-size: 23px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .form-group label {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .form-group input::-webkit-input-placeholder {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .form-group input[type="text"]#phone-number {
+        margin-top: 13px;
+    }
+    .form-group select#country-code,
+    .form-group select#country,
+    .form-group select#gender,
+    .form-group select#category,
+    .form-group select#type,
+    .form-group textarea,
+    .form-group select#university,
+    .form-group select#course,
+    .form-group select#rating {
+        padding: 8px 28px 8px 8px;
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .form-group input {
+        height: 35px;
+        margin: 0px 10px 0px 0px;
+    }
+    .form-group input[type=date],
+    .form-group select {
+        height: 35px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .form-group input[type="file"].image-upload,
+    .form-group input[type="file"].display-picture,
+    .form-group input[type="file"].note-preview,
+    {
+        width: 100%;
+        height: 80px;
+        background-size: 80px 60px;
+        margin-bottom: 0px;
+    }
+    .form-group textarea {
+        height: 100px;
+    }
+    .form-group input[type="file"].upload-notes {
+        height: 80px;
+        background-size: 80px 60px;
+    }
+    #submit-btn a,
+    #notes-submit-btn .note-submit-btn,
+    #publish-btn .publish-btn {
+        width: 110px;
+        font-size: 15px;
+        line-height: 25px;
+        padding: 3px 6px;
+        text-transform: uppercase;
+        height: 35px;
+        color: #fff;
+    }
+}
+
+
+/* for Phone Number input */
+
+@media (min-width: 431px) and (max-width: 576px) {
+    .form-group input[type="text"]#phone-number {
+        margin-top: 0px;
+    }
+}
+
+
+/* ================================== Small devices (landscape phones, 576px and up) ================================= */
+
+@media (min-width: 576px) and (max-width: 768px) {
+    /* ========== general all heading =================== */
+    .horizontal-heading h3 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #6255a5;
+        margin-bottom: 30px;
+    }
+    .horizontal-heading-sm h3 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #6255a5
+    }
+    /* ========================== Footer ==================== */
+    .footer-text p {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .field-icon {
+        width: 25px;
+        height: 18px;
+        float: right;
+        position: relative;
+        top: -28px;
+        right: 15px;
+    }
+    /* ================================== Navigation ==================================== */
+    .navbar {
+        display: block;
+    }
+    nav .container {
+        max-width: 100%;
+        margin: 0 !important;
+    }
+    .navbar-brand {
+        padding-left: 15px;
+    }
+    #navbarSupportedContent {
+        background: #fff;
+    }
+    .navbar-toggler {
+        padding-right: 15px !important;
+    }
+    nav .dropdown-menu {
+        border: none;
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    }
+    nav li.profile-dropdown .dropdown-menu a.logout:hover {
+        color: #6255a5;
+    }
+    nav .dropdown-item {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+    nav .dropdown-menu .dropdown-item:hover,
+    nav .dropdown-menu .dropdown-item:focus,
+    nav .dropdown-menu .dropdown-item:active {
+        color: #6255a5 !important;
+        background-color: #fff !important;
+    }
+    nav .profile-dropdown div.dropdown-menu.show {
+        -webkit-transform: translate3d(15px, 0, 0) !important;
+        transform: translate3d(15px, 0, 0) !important;
+    }
+    ul.navbar-nav {
+        margin-top: 15px;
+    }
+    ul.navbar-nav li {
+        margin-bottom: 15px;
+    }
+    /* ======================== home page ================== */
+    .head-heading {
+        font-size: 23px;
+        line-height: 35px;
+        margin-bottom: 22px;
+    }
+    .head-text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .btn-head {
+        width: 140px;
+        font-size: 12px;
+    }
+    /* about */
+    .about-right p {
+        font-size: 14px;
+    }
+    .about-right p:first-child {
+        margin-bottom: 25px;
+    }
+    /* work */
+    .work-image {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    .work-image img {
+        width: 35px;
+        height: 35px;
+    }
+    .work-item h5 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .work-item p {
+        margin: 10px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .btn-work {
+        width: 110px;
+        margin: 0px 0px 20px 0px;
+        font-size: 11px;
+    }
+    .testimonial .test-name-desc {
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+    .testimonial p {
+        font-style: italic;
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .test-name-desc h5 {
+        font-size: 19px;
+        line-height: 25px;
+    }
+    .testimonial img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 25px;
+    }
+    #testimonials .content-box {
+        padding-bottom: 30px !important;
+    }
+    /* ====================== search Notes ================== */
+    .search-title h3 {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 22px;
+    }
+    .search-content {
+        height: 280px;
+        width: 100%;
+    }
+    .search-container {
+        margin: 10px;
+    }
+    .search-container input[type=search] {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 40px;
+    }
+    .search-container input::-webkit-input-placeholder,
+    .search-container option {
+        font-size: 16px;
+    }
+    .search-container select {
+        height: 40px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    #note-list .conent-box-sm {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    /* ================================== note detail =================== */
+    .note-image img {
+        height: 270px;
+        width: 200px;
+    }
+    .note-heading h2 {
+        font-size: 28px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .note-description p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+    .btn-download {
+        width: 190px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 14px;
+        padding: 12px 20px;
+    }
+    .note-detail-right {
+        margin-top: 30px;
+    }
+    .note-preview-right {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    /* ======================  FAQ  ===================== */
+    .faq-header-statement h3 {
+        font-size: 27px;
+        line-height: 28px;
+    }
+    /* ===================================== dashboard ======================== */
+    .title h3 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .add-note-btn a {
+        width: 120px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 19px;
+        padding: 5px 10px;
+    }
+    .my-earning-box {
+        border: 1px solid #d1d1d1;
+        border-radius: 3px;
+        padding: 15px 15px 5px 15px;
+        height: 100%;
+        margin: 10px;
+    }
+    .dashboard-box {
+        border: 1px solid #d1d1d1;
+        border-radius: 3px;
+        padding: 15px 15px 5px 15px;
+        height: 100%;
+        margin: 10px;
+    }
+    .dashboard-box-lg {
+        border-radius: 3px;
+    }
+    .earning-box {
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+    .box-lg {
+        padding: 10px;
+        margin-top: 0px;
+    }
+    .my-earning-box h5 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .heading-numeric {
+        font-size: 29px;
+        line-height: 30px;
+    }
+    .same-box {
+        margin-bottom: 10px;
+    }
+    #in-progress-notes input[type="search"],
+    #published-notes input[type="search"] {
+        width: 90%;
+        height: 40px;
+    }
+    #search-btn a {
+        width: 90%;
+        height: 40px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .table {
+        font-size: 14px;
+    }
+    .table-header {
+        font-size: 16px;
+    }
+    /* ======================= My Downloads ============================ */
+    /* ======================= My sold notes ============================ */
+    /* ======================= My rejected notes ============================ */
+    /* ======================= buyer request ============================ */
+    #my-download input[type="search"],
+    #my-rejected-notes input[type="search"],
+    #my-sold-notes input[type="search"],
+    #buyer-request input[type="search"] {
+        width: 95%;
+        height: 40px;
+    }
+    .modal-body .rate {
+        height: 40px;
+        padding: 0px 6px;
+    }
+    .modal-body .rate:not(:checked)>label {
+        width: 32px;
+        height: 35px;
+        margin-right: 15px;
+        font-size: 38px;
+    }
+    /* =================== User Profile ================ */
+    /* =========================== add notes  ======================== */
+    #basic-details .horizontal-heading h3,
+    #basic-notes-details .horizontal-heading h3 {
+        margin-bottom: 25px;
+    }
+    .form-group-heading h3 {
+        font-size: 23px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .form-group label {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .form-group input::-webkit-input-placeholder {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .form-group input[type="text"]#phone-number {
+        margin-top: 13px;
+    }
+    .form-group select#country-code {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .form-group select#country,
+    .form-group select#gender,
+    .form-group select#category,
+    .form-group select#type,
+    .form-group textarea {
+        font-size: 14px;
+    }
+    .form-group input {
+        height: 38px;
+        margin: 0px 10px 0px 0px;
+    }
+    .form-group input[type=date],
+    .form-group select {
+        height: 38px;
+    }
+    .form-group input[type="file"].image-upload,
+    .form-group input[type="file"].display-picture,
+    .form-group input[type="file"].note-preview {
+        width: 100%;
+        height: 80px;
+        background-size: 90px 70px;
+        margin-bottom: 0px;
+    }
+    .form-group input[type="file"].upload-notes {
+        height: 80px;
+        background-size: 90px 70px;
+    }
+    .gender {
+        margin-top: 14px;
+    }
+    #submit-btn a,
+    #notes-submit-btn .note-submit-btn,
+    #publish-btn .publish-btn {
+        width: 140px;
+        font-size: 18px;
+        line-height: 30px;
+        padding: 3px 6px;
+        text-transform: uppercase;
+        height: 38px;
+    }
+    .sell-for-div {
+        margin-bottom: 17px;
+    }
+}
+
+
+/* =============================================== Medium devices (tablets, 768px and up) ========================================== */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* ========== general all heading ===================*/
+    .horizontal-heading h3 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #6255a5;
+        margin-bottom: 30px;
+    }
+    .horizontal-heading-sm h3 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #6255a5
+    }
+    /* ========================== Footer ==================== */
+    .footer-text p {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    /* ================================== Navigation ==================================== */
+    .navbar {
+        display: block;
+    }
+    nav .container {
+        max-width: 100%;
+        margin: 0 !important;
+    }
+    .navbar-brand {
+        padding-left: 15px;
+    }
+    #navbarSupportedContent {
+        background: #fff;
+    }
+    .navbar-toggler {
+        padding-right: 15px !important;
+    }
+    nav .dropdown-menu {
+        border: none;
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    }
+    nav li.profile-dropdown .dropdown-menu a.logout:hover {
+        color: #6255a5;
+    }
+    nav .dropdown-item {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+    nav .dropdown-menu .dropdown-item:hover,
+    nav .dropdown-menu .dropdown-item:focus,
+    nav .dropdown-menu .dropdown-item:active {
+        color: #6255a5 !important;
+        background-color: #fff !important;
+    }
+    nav .profile-dropdown div.dropdown-menu.show {
+        -webkit-transform: translate3d(15px, 0, 0) !important;
+        transform: translate3d(15px, 0, 0) !important;
+    }
+    ul.navbar-nav {
+        margin-top: 15px;
+    }
+    ul.navbar-nav li {
+        margin-bottom: 15px;
+    }
+    /* ======================== home page ================== */
+    .head-heading {
+        font-size: 27px;
+        line-height: 35px;
+        margin-bottom: 22px;
+    }
+    .head-text {
+        font-size: 19px;
+        line-height: 28px;
+    }
+    .btn-head {
+        width: 150px;
+        font-size: 14px;
+    }
+    .about-left {
+        padding-right: 10px;
+    }
+    .about-right {
+        padding-left: 10px;
+    }
+    .about-left h3 {
+        font-size: 26px;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .about-right p {
+        font-size: 16px;
+    }
+    .about-right p:first-child {
+        margin-bottom: 25px;
+    }
+    .testimonial {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.06);
+        margin-bottom: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 20px;
+    }
+    .testimonial .test-name-desc {
+        margin-top: 8px;
+        padding-left: 5px;
+    }
+    .testimonial p {
+        font-style: italic;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .test-name-desc h5 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .test-name-desc h6 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .testimonial img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 25px;
+    }
+    #testimonials .content-box {
+        padding-bottom: 30px !important;
+    }
+    .testimonial-outer {
+        padding: 0px 10px;
+    }
+    /* ====================== search Notes ================== */
+    .search-container input[type=search] {
+        margin-bottom: 10px;
+        height: 37px;
+    }
+    .search-container input::-webkit-input-placeholder,
+    .search-container option {
+        font-size: 18px;
+    }
+    .search-container select {
+        height: 37px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+    .notes {
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .note-info {
+        padding: 13px;
+    }
+    .note-table .note-image img {
+        height: 175px;
+    }
+    .note-title p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        height: 90px;
+    }
+    .note-table ul.detail li {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 10px;
+    }
+    .note-table ul.detail li img {
+        width: 24px;
+        margin-right: 10px;
+        padding: 2px 0px 5px 0px;
+    }
+    .note-table ul.detail li:last-child {
+        font-size: 12px;
+        color: red;
+    }
+    /* rating */
+    .rate {
+        height: 18px;
+        line-height: 25px;
+    }
+    .rate:not(:checked)>label {
+        float: right;
+        font-size: 22px;
+    }
+    .rating-text {
+        line-height: 25px;
+        margin: 0px 0px 0px 5px;
+        font-size: 13px;
+        display: block;
+    }
+    /* ==================================== note detail ======================================== */
+    .note-detail-right {
+        margin-top: 30px;
+    }
+    .preview {
+        padding: 0px 15px;
+    }
+    .note-preview-left {
+        margin-right: 10px;
+    }
+    .note-preview-right {
+        margin-left: 10px;
+    }
+    .review {
+        padding: 6px;
+    }
+    .note-detail-preview {
+        height: 560px;
+    }
+    .review-container {
+        height: 560px;
+    }
+    /* ================================ dashboard ====================*/
+    .my-earning-box h5 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .heading-numeric {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .dashboard-box p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    .dashboard-box {
+        border: 1px solid #d1d1d1;
+        border-radius: 3px;
+        padding: 24px 8px 8px 8px;
+        height: 100%;
+    }
+    .same-box {
+        padding: 0px 6px;
+    }
+    #in-progress-notes input[type="search"],
+    #published-notes input[type="search"] {
+        width: 90%;
+        height: 49px;
+    }
+    /* ======================= My Downloads ============================*/
+    /* ======================= My sold notes ============================*/
+    /* ======================= My rejected notes ============================*/
+    /* ======================= buyer request ============================*/
+    #my-download input[type="search"],
+    #my-rejected-notes input[type="search"],
+    #my-sold-notes input[type="search"],
+    #buyer-request input[type="search"] {
+        width: 95%;
+        height: 48px;
+    }
+    /* =================== User Profile ================ */
+    /* =========================== add notes  ======================== */
+    .form-group input[type="text"]#phone-number {
+        margin-top: 18px;
+    }
+    .gender {
+        margin-top: 18px;
+    }
+    /* ======================  FAQ  =====================*/
+    .faq-header-statement h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+
+/* ================================= Large devices (desktops, 992px and up) ===================================================*/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* ========================================== Navigation Bar ==================================== */
+    #navbarSupportedContent .nav-item {
+        padding: 0 10px;
+    }
+    /* ========search notes ========== */
+    .note-table .note-image img {
+        width: 100%;
+        height: 230px;
+        padding: 0px;
+    }
+    .note-title p {
+        font-size: 19px;
+        line-height: 26px;
+        height: 78px;
+    }
+    .note-table ul.detail li {
+        font-size: 14px !important;
+        line-height: 17px;
+    }
+    .note-table ul.detail li img {
+        width: 27px;
+    }
+    .note-table ul.detail li:last-child {
+        font-size: 13px;
+    }
+    .rating-text {
+        font-size: 15px;
+    }
+    /* =============================== note detail ====================== */
+    .note-image img {
+        height: 280px;
+        width: 220px;
+    }
+    .note-heading h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .note-detail-right {
+        margin-top: 24px;
+    }
+    /* =========================== dashboard ================== */
+    #in-progress-notes input[type="search"],
+    #published-notes input[type="search"] {
+        width: 100%;
+        height: 49px;
+    }
+    /* ======================= My Downloads ============================*/
+    /* ======================= My sold notes ============================*/
+    /* ======================= My rejected notes ============================*/
+    /* ======================= buyer request ============================*/
+    #my-download input[type="search"],
+    #my-rejected-notes input[type="search"],
+    #my-sold-notes input[type="search"],
+    #buyer-request input[type="search"] {
+        width: 95%;
+        height: 48px;
+    }
+    /* =================== User Profile ================ */
+    /* =========================== add notes  ======================== */
+    .form-group input[type="text"]#phone-number {
+        margin-top: 18px;
+    }
+    .gender {
+        margin-top: 18px;
+    }
+}
+
+
+/* ============================================= X-Large devices (large desktops, 1200px and up) =========================================*/
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    ...
+}
+
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+
+@media (min-width: 1400px) {}
