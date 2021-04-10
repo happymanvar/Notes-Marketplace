@@ -24,7 +24,7 @@ try {
 
     $config_email = 'manvarhappy66@gmail.com';
     $mail->Username = $config_email; // YOUR gmail email which will be used as sender and PHPMailer configuration 
-    $mail->Password = 'HarryPotter123';
+    $mail->Password = '';
 
 
     // Sender and recipient settings
