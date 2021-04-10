@@ -1,0 +1,1721 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =============== Content Box ============ */
+
+.content-box {
+    padding: 60px 0;
+}
+
+.conent-box-sm {
+    margin: 10px 0px;
+    padding-top: 30px;
+}
+
+
+/* =============== Heading =============== */
+
+.horizontal-heading h3 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    margin-bottom: 50px;
+}
+
+.horizontal-heading-sm h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5
+}
+
+
+/* html , body */
+
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ================== Login ===================== */
+
+
+/* ================== Signup ==================== */
+
+
+/* ================== forgot password ==================== */
+
+
+/* ================== change password ==================== */
+
+#signup,
+#login,
+#forgot-password,
+#change-password {
+    background-image: url('../images/pre-login/banner-with-overlay.jpg');
+    width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 15px;
+}
+
+.form-content {
+    background-color: white;
+    padding: 25px 50px;
+    border-radius: 3px;
+    margin-top: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.white-box {
+    width: 450px;
+}
+
+.login-heading h3,
+.signup-heading h3,
+.forgot-password-heading h3,
+.change-password-heading h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    margin-bottom: 5px;
+}
+
+.login-heading p,
+.signup-heading p,
+.forgot-password-heading p,
+.change-password-heading p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.change-password-heading p {
+    font-size: 14px;
+}
+
+.password-forgotpass a {
+    color: #6255a5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    float: right;
+}
+
+.field-icon {
+    width: 25px;
+    height: 18px;
+    float: right;
+    position: relative;
+    top: -35px;
+    right: 15px;
+}
+
+#login .form-check .form-check-input {
+    border: 1px solid #d1d1d1;
+    height: 25px;
+    width: 25px;
+    border-radius: 3px;
+}
+
+#login .form-check .form-check-input:focus {
+    outline: 5px;
+}
+
+#login .form-check .form-check-label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    margin: -20px 0px 10px 32px;
+}
+
+.pre-login-btns {
+    height: 33px;
+    background-color: #6255a5;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.form-group input[type=email],
+.form-group input[type=password],
+.form-group input[type=text] {
+    width: 100%;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+#signup .success {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    color: green;
+}
+
+#passwordHelpBlock {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ff3636;
+}
+
+.form-group .forgot-password {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 150px;
+    color: #6255a5;
+    float: right;
+}
+
+.form-group .forgot-password:focus {
+    outline: none;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+
+/* =========================== Email Verification ================================== */
+
+#verify-email {
+    margin: 130px auto 0 auto;
+    padding: 30px;
+    width: 450px;
+}
+
+#verify-email .horizontal-heading-sm h3 {
+    font-size: 26px;
+    line-height: 30px;
+    color: #6255a5;
+    font-weight: 600;
+    margin: 45px 0 25px 0;
+}
+
+#verify-email .horizontal-heading-sm p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 600;
+    margin: 5px 0 18px 0;
+}
+
+
+/* ========================================== Home Page ========================================== */
+
+
+/* head */
+
+#head-content {
+    background: url("../images/home/banner-with-overlay.jpg") no-repeat;
+    width: 100%;
+    height: 620px;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+#head-content-inner {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
+}
+
+.head-heading {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 680;
+    line-height: 52px;
+    margin-bottom: 20px;
+}
+
+.head-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 380px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.btn-head {
+    width: 172px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 2px solid #fff;
+}
+
+.btn-head:hover,
+.btn-head:focus {
+    color: #fff;
+    background-color: #6255a5;
+    border-color: #6255a5;
+}
+
+
+/* about */
+
+.about-right p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.about-right p:first-child {
+    margin-bottom: 35px;
+}
+
+
+/* work */
+
+#work {
+    background: #f2f1f5;
+}
+
+.work-image {
+    height: 140px;
+    width: 140px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+    display: inline-flex;
+    background-color: #fff;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+
+.work-image img {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+
+.work-item h5 {
+    color: #6255a6;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.work-item p {
+    color: #333333;
+    margin: 15px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.btn-work {
+    width: 172px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #6255a5;
+    margin: 0px 0px 30px 0px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+
+/* testimonial */
+
+.testimonial {
+    border-radius: 3px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    padding: 40px;
+    -webkit-border-radius: 3px;
+}
+
+.test-name-desc h6 {
+    font-style: normal;
+    margin-top: 0px;
+}
+
+.testimonial .test-name-desc {
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0px;
+    color: #333333;
+}
+
+.test-name-desc h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #6255a5;
+    margin-bottom: 0px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+#testimonials .content-box {
+    padding-bottom: 30px !important;
+}
+
+
+/* ========================================== footer ===============================================*/
+
+footer {
+    border-top: 1px solid #d1d1d1;
+    padding: 20px 0 10px 0;
+    margin-top: 0px;
+}
+
+.footer-text p {
+    font-size: 16px;
+}
+
+ul.social-list {
+    padding: 0;
+}
+
+ul.social-list li {
+    display: inline-block;
+    padding: 0;
+}
+
+ul.social-list li a {
+    background-color: #6255a5;
+    border: 1px solid #6255a5;
+    display: inline-block;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    width: 34px;
+    margin-right: 5px;
+    height: 34px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+
+/* =========================== User Profile ====================== */
+
+
+/* =========================== Add Notes  ======================== */
+
+#head-part {
+    background: url("../images/home/banner-with-overlay.jpg") no-repeat;
+    width: 100%;
+    height: 370px;
+    position: relative;
+    background-size: 100% 100%;
+}
+
+#head-part-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateY(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.header-statement h3 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52px;
+    margin-bottom: 20px;
+}
+
+
+/* -------- form ---- */
+
+#basic-details .horizontal-heading h3,
+#basic-notes-details .horizontal-heading h3 {
+    margin-bottom: 35px;
+}
+
+.form-group-heading {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 3px;
+}
+
+.form-group input::-webkit-input-placeholder {
+    color: #8a8a8a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.form-group input {
+    border: 1px solid #d1d1d1;
+    width: 90%;
+    height: 50px;
+    border-radius: 3px;
+    margin: 0px 30px 0px 0px;
+}
+
+#btn-radio-paid-free input[type="radio"] {
+    display: none;
+}
+
+#btn-radio-paid-free input[type="radio"]+label:before {
+    content: "";
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-clip: content-box;
+    border: 1px solid #d1d1d1;
+    background-color: none;
+    border-radius: 50%;
+}
+
+#btn-radio-paid-free input[type="radio"]:checked+label:before {
+    padding: 4px;
+    background-color: #6255a5;
+    border: 1px solid #6255a5;
+    display: inline-flex;
+}
+
+
+/*---------- Drop Down Right Side Icon------------- */
+
+.form-group select {
+    text-indent: 1px;
+    text-overflow: '';
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url('../images/User-Profile/down-arrow.png') no-repeat;
+    background-size: 20px 12px;
+    background-position: 98%;
+}
+
+.form-group input[type=date],
+.form-group select {
+    height: 50px;
+    width: 100%;
+}
+
+input[type="text"]#date {
+    text-indent: 1px;
+    text-overflow: '';
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url('../images/User-Profile/calendar.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 98%;
+}
+
+.form-group input[type=number] {
+    width: 100%;
+}
+
+.form-group input[type="file"].image-upload,
+.form-group input[type="file"].display-picture,
+.form-group input[type="file"].note-preview {
+    border: 1px solid #d1d1d1;
+    display: inline-block;
+    width: 100%;
+    padding: 120px 0 0 0;
+    height: 100px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('../images/Add-notes/upload-file.png') center center no-repeat;
+    border-radius: 3px;
+    background-size: 100px 80px;
+}
+
+.form-group input[type="file"].upload-notes {
+    border: 1px solid #d1d1d1;
+    display: inline-block;
+    width: 100%;
+    padding: 120px 0 0 0;
+    height: 100px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('../images/Add-notes/upload-note.svg') center center no-repeat;
+    border-radius: 3px;
+    background-size: 80px 80px;
+}
+
+.file-upload {
+    margin-bottom: 0px;
+}
+
+.form-group textarea {
+    height: 153px;
+    border-radius: 3px;
+    border: 1px solid #d1d1d1;
+}
+
+#notes-submit-btn .note-submit-btn,
+#publish-btn .publish-btn,
+#submit-btn .submit-btn {
+    background-color: #6255a5;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    margin: 25px 20px 50px 0px;
+    color: #fff;
+    text-transform: uppercase !important;
+    font-size: 18px !important;
+    padding: 5px 20px !important;
+}
+
+#submit-btn a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 5px 10px;
+    margin: 0px;
+    background-color: #6255a5;
+}
+
+
+/*
+#notes-submit-btn .note-submit-btn,
+#publish-btn .publish-btn {
+    background-color: #6255a5;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    margin: 25px 20px 50px 0px;
+    color: #fff;
+    text-transform: uppercase !important;
+    font-size: 18px !important;
+    padding: 5px 20px !important;
+}
+*/
+
+.sell-for-div {
+    margin-bottom: 4px;
+}
+
+
+/* ========================================= search notes ========================================== */
+
+.search-title h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5;
+    margin-bottom: 20px;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+.search-content {
+    background-color: #f9f9f9;
+    height: 181px;
+    width: 100%;
+}
+
+.search-container {
+    margin: 30px;
+}
+
+
+/*---------- Form Input Search Icon  (GENERAL) ------------*/
+
+.form-group input[type="search"] {
+    text-indent: 10px;
+    padding-left: 35px;
+    text-overflow: '';
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url('../images/Search/search-icon.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px;
+}
+
+.search-container input[type=search] {
+    border: 1px solid #d1d1d1;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.search-container input::-webkit-input-placeholder,
+.search-container option {
+    color: #8a8a8a;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.search-container select {
+    border: 1px solid #d1d1d1;
+    height: 50px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    text-overflow: ellipsis;
+    padding-right: 35px;
+    white-space: nowrap;
+}
+
+
+/* notes list */
+
+.note-results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.notes {
+    margin-bottom: 20px;
+}
+
+.note-table {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #d1d1d1;
+    height: 100%;
+}
+
+.note-info {
+    padding: 17px;
+}
+
+.note-table .note-image {
+    padding-right: 0px;
+}
+
+.note-info .detail {
+    margin-bottom: 0px;
+}
+
+.note-table .note-image img {
+    width: 100%;
+    height: 253px;
+    padding: 0px;
+}
+
+.note-table .note-info {
+    width: 100%;
+    height: 100%;
+}
+
+.note-title p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #6255a5;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    display: inline-table;
+    height: 75px;
+}
+
+.note-table ul.detail {
+    list-style: none;
+    vertical-align: middle;
+}
+
+.note-table ul.detail li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #333333;
+    padding-bottom: 10px;
+}
+
+.note-table ul.detail li img {
+    width: 28px;
+    margin-right: 10px;
+    padding: 2px 0px 5px 0px;
+}
+
+.note-table ul.detail li:last-child {
+    font-size: 13px !important;
+    color: red;
+}
+
+
+/* rating */
+
+.rate {
+    float: left;
+    height: 20px;
+    line-height: 22px;
+    margin: 0px 0px 0px 0px;
+}
+
+.rate img {
+    height: 23px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+.rating-text {
+    float: left;
+    line-height: 25px;
+    margin: 0px 0px 0px 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    display: inline-block;
+}
+
+
+/* pagination (comman) */
+
+.pagination {
+    margin: 40px auto 0px auto;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link img {
+    font-size: 24px;
+    line-height: 20px;
+}
+
+a.page-link {
+    border: none !important;
+    color: #333333;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.page-link:focus,
+.page-link:hover {
+    color: #ffffff;
+    width: 34px;
+    height: 34px;
+    background-color: #6255a5;
+    font-style: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.pagination .active a.page-link {
+    background: #6255a5;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.pagination a {
+    text-decoration: none;
+    border: none !important;
+    margin: 5px 5px;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+}
+
+.page-item.disabled .page-link {
+    color: #868e96;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #CEFFCE;
+    border-color: #718393;
+}
+
+
+/* =================================== notes details ============================================*/
+
+.notes-detail {
+    padding-top: 130px;
+}
+
+.note-image img {
+    height: 300px;
+    width: 240px;
+}
+
+.note-heading h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    margin-bottom: 13px;
+}
+
+.note-image,
+.horizontal-heading-sm {
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+.note-heading,
+.note-description,
+.download-btn {
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.note-heading p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333333;
+    margin: 0px 0px 18px 0px;
+}
+
+.note-description p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333333;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.btn-download {
+    background-color: #6255a5;
+    width: 204px;
+    height: 50px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+
+.btn-download a {
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 12px 10px;
+    text-transform: uppercase;
+}
+
+.btn-download a:hover {
+    text-decoration: none;
+}
+
+.note-detail-right {
+    padding: 0px 15px;
+    margin-top: 24px;
+}
+
+.left-side p,
+.right-side p {
+    font-size: 18px;
+    color: #333333;
+    line-height: 36px;
+    font-weight: 400;
+    padding: 0px;
+    margin-bottom: 7px;
+}
+
+.right-side p {
+    color: #6255a5;
+    font-weight: 600;
+}
+
+.note-rating .stars img {
+    margin-top: 5px;
+    height: 19px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.note-detail-right:last-child .instruction p {
+    color: red;
+}
+
+.bottom-border {
+    border-bottom: 2px solid #d1d1d1;
+    margin-top: 20px;
+}
+
+.note-preview {
+    padding-top: 10px;
+}
+
+.note-preview-left {
+    margin-right: 20px;
+}
+
+.note-preview-right {
+    margin-left: 20px;
+}
+
+.preview {
+    padding: 0px 20px;
+}
+
+.note-detail-preview {
+    border: 1px solid #333333;
+    border-radius: 3px;
+    width: 100%;
+    height: 525px;
+}
+
+.note-detail-preview iframe {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.review-container {
+    padding: 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    height: 525px;
+}
+
+.user-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flow-root;
+}
+
+.review-detail h4 {
+    margin-bottom: 3px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.review-detail p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.review-detail .stars {
+    font-size: 18px;
+    margin-top: 0px;
+    color: yellow;
+}
+
+.review {
+    border-bottom: 1px solid #d1d1d1;
+    margin: 5px 0px;
+    padding: 10px;
+}
+
+.review:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* ========================== thanks modal ===================================== */
+
+.modal-dialog {
+    margin-top: 150px;
+}
+
+.modal-header {
+    padding: 15px;
+}
+
+.modal-title {
+    text-align: center;
+    margin: 40px 20px 0px 20px;
+    padding: 0px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 0px 55px 30px 40px;
+}
+
+.modal-title img {
+    width: 63px;
+    height: 63px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.modal-title h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #6255a5;
+    display: inline-block;
+    text-align: center;
+}
+
+.modal-body p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333333;
+}
+
+.modal-body h5 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+}
+
+
+/* =========================================== dashboard page ========================================== */
+
+.title,
+.add-note-btn {
+    margin-bottom: 30px;
+}
+
+.title h3 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    margin: 0px;
+}
+
+.dashboard-date {
+    min-width: 100px;
+}
+
+.add-note-btn a {
+    background-color: #6255a5;
+    width: 150px;
+    height: 45px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+    font-style: 700;
+    padding: 10px 20px;
+}
+
+#dashboard .content-box {
+    padding-top: 150px;
+}
+
+.dashboard-box {
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    padding: 15px 15px 5px 15px;
+    height: 100%;
+}
+
+.my-earning-box {
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    padding: 15px 15px 5px 15px;
+    height: 100%;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.dashboard-box-lg {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.earning-box {
+    padding-right: 0px;
+}
+
+.box-lg {
+    padding-left: 0px;
+}
+
+.my-earning-box h5 {
+    color: #6255a5;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.heading-numeric {
+    color: #6255a5;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.dashboard-box p {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+#published-notes .content-box {
+    padding-top: 0px;
+}
+
+#in-progress-notes .content-box {
+    padding-bottom: 30px;
+}
+
+.published-notes-table,
+.in-progress-table {
+    border: 0.2px solid #d1d1d1;
+    margin-top: 0px;
+}
+
+
+/* ================================= My Downloads ==========================================*/
+
+
+/* ================================= My sold notes =========================================*/
+
+
+/* ================================= My rejected notes =====================================*/
+
+
+/* ================================= buyer request =========================================*/
+
+#my-download input[type="search"],
+#my-rejected-notes input[type="search"],
+#my-sold-notes input[type="search"],
+#buyer-request input[type="search"] {
+    width: 400px;
+}
+
+#my-download .content-box,
+#my-rejected-notes .content-box,
+#my-sold-notes .content-box,
+#buyer-request .content-box {
+    padding-top: 150px;
+}
+
+#search-btn a {
+    background-color: #6255a5;
+    color: #fff;
+    width: 117px;
+    height: 45px;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 30px;
+    font-style: 700;
+    margin-right: 17px;
+    margin-bottom: 30px;
+}
+
+.table-search-bar {
+    padding-right: 0px;
+}
+
+.table-search-btn {
+    padding: 0px;
+}
+
+.dowmload-table,
+.sold-note-table,
+.rejected-note-table,
+.buyer-request-table {
+    border: 0.2px solid #d1d1d1;
+    margin-top: 0px;
+}
+
+.notedetail,
+.mydownload,
+.buyerrequest,
+.mysoldnote {
+    text-decoration: none;
+    color: #6255a5 !important;
+}
+
+.notedetail:hover,
+.mydownload:hover,
+.buyerrequest:hover,
+.mysoldnote:hover {
+    text-decoration: none;
+}
+
+.bottom-page {
+    margin: 0px 50px;
+}
+
+.alow-download button>a,
+.dropdown-menu button>a {
+    text-decoration: none;
+    color: black;
+}
+
+.alow-download button>a:hover,
+.alow-download button>a:focus,
+.dropdown-menu button>a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.date,
+.title {
+    min-width: 200px;
+}
+
+.action {
+    min-width: 47px;
+}
+
+.blank {
+    min-width: 90px;
+}
+
+.remark {
+    min-width: 200px;
+}
+
+.table-header {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+}
+
+.table>tbody>tr>td {
+    vertical-align: middle;
+}
+
+.table-hover {
+    margin-bottom: 0px;
+}
+
+tr:hover {
+    -moz-box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.buyer-request-table .table-header {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+}
+
+
+/* ======================== add review modal ============== */
+
+
+/* ======================== thanks modal ===================== */
+
+#addreview .modal-dialog {
+    margin-top: 200px;
+}
+
+#addreview .modal-header {
+    padding: 30px 15px 0px 50px;
+}
+
+#addreview .modal-header button {
+    padding: 10px 30px 0px 0px;
+}
+
+#addreview .modal-title {
+    text-align: center;
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+}
+
+#addreview .modal-body {
+    padding: 35px 50px 30px 50px;
+}
+
+#addreview .modal-title h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5;
+    display: inline-block;
+}
+
+.modal-body form {
+    margin-top: 35px;
+}
+
+.modal-body .form-group label {
+    margin-bottom: 10px;
+}
+
+.modal-body .form-group textarea {
+    height: 150px;
+}
+
+.modal-body .rate {
+    float: left;
+    height: 46px;
+    padding: 0px 15px;
+}
+
+.modal-body .rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.modal-body .rate:not(:checked)>label {
+    float: right;
+    width: 38px;
+    height: 43px;
+    margin-right: 18px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 45px;
+    color: #ccc;
+}
+
+
+/*----------- Drop Down Left --------------*/
+
+#my-downloads .dropleft div.dropdown-menu.show {
+    -webkit-transform: translate3d(-155px, -34px, 0px) !important;
+    transform: translate3d(-155px, -34px, 0px) !important;
+}
+
+.dropdown-menu {
+    border: none;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+#my-downloads .dropleft .dropdown-item {
+    padding: 10px 12px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+#my-downloads .dropleft .dropdown-item a {
+    color: #000;
+}
+
+.dropleft .dropdown-item:hover,
+.dropleft .dropdown-item:focus,
+.dropleft .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    outline: 0px;
+    background-color: #6255a5;
+}
+
+.dropleft div.dropdown-menu {
+    padding: 0;
+}
+
+
+/* =========================================== FAQ =============================================*/
+
+.faq-header-statement h3 {
+    color: #fff;
+    font-size: 43px;
+    font-weight: 600;
+    line-height: 52px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#faq-head-part-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateY(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+#general-question .horizontal-heading h3,
+#uploader-question .horizontal-heading h3,
+#downloader-question .horizontal-heading h3 {
+    margin-bottom: 26px;
+}
+
+#general-question .content-box {
+    padding-bottom: 30px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.card-header {
+    padding: 5px 0;
+    height: auto;
+    border-bottom: none;
+    display: flex;
+}
+
+.card-header h6 {
+    float: left;
+    color: #333333;
+    display: inline;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    padding: 8px 20px 10px 20px;
+}
+
+.card-header a {
+    padding: 0 20px;
+}
+
+.card-header a.btn {
+    margin-left: auto;
+    display: inline;
+}
+
+.card-header a img {
+    padding: 10px;
+    width: 38px;
+    height: 38px;
+}
+
+.card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.card-body p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+#uploader-question .content-box,
+#downloader-question .content-box {
+    padding: 30px 0px;
+}
+
+
+/* ==========================================  contect us ============================================= */
+
+#contect-us .horizontal-heading h3 {
+    margin-bottom: 6px;
+}
+
+.comment-area textarea {
+    height: 233px;
+}
+
+.btn-submit button {
+    text-transform: uppercase;
+    background-color: #6255a5;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 18px;
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+
+/* testing */
+
+table.dataTable thead th,
+table.dataTable thead td {
+    padding: 10px 18px;
+    border-bottom: none !important;
+}
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: none !important;
+    background-color: #6255a5 !important;
+    border-radius: 50% !important;
+    color: white !important;
+    font-family: "open sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    display: table !important;
+    width: 100% !important;
+    text-align: center;
+    margin-top: 10px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: none;
+    background-color: white;
+    color: #333 !important;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-family: "open sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    outline: none;
+}
+
+.dataTables_wrapper .dataTables_info {
+    display: none;
+}
+
+
+/*-----------------------------------------------*/
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 40px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+}
+
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating>input:checked~label,
+
+/* show gold star when clicked */
+
+.rating:not(:checked)>label:hover,
+
+/* hover current star */
+
+.rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+
+/* hover previous stars in list */
+
+.rating>input:checked+label:hover,
+
+/* hover current star when changing rating */
+
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+
+/* lighten current selection */
+
+.rating>input:checked~label:hover~label {
+    color: #FFED85;
+}
