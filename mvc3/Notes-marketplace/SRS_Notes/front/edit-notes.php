@@ -44,6 +44,11 @@ session_start();
     <?php
     if (!(isset($_SESSION['is_loggedin']))) {
         header("Location:../login.php");
+    } else {
+        $first_name = $_SESSION['username'];
+        $last_name = $_SESSION['lastname'];
+        $email_id = $_SESSION['email'];
+        $user_id = $_SESSION['user_id'];
     }
 
     if (!(isset($_GET['edit']))) {
@@ -93,12 +98,18 @@ session_start();
         $save_professor = $_POST['professor-name'];
         $save_sell = $_POST['sellingtype'];
         $save_sell_price = $_POST['sellprice'];
+
+        $attachment = $_FILES['notes-data']['name'];
+        $attachment_temp = $_FILES['notes-data']['tmp_name'];
+
         $profile_picture = $_FILES['display-picture']['name'];
         $profile_picture_tmp = $_FILES['display-picture']['tmp_name'];
         $preview_cv = $_FILES['note-preview']['name'];
         $preview_cv_tmp = $_FILES['note-preview']['tmp_name'];
         $accepted_image = array('png', 'jpg', 'jpeg');
         $accepted_pdf = array('pdf');
+
+
         if (!empty($_FILES['display-picture']['tmp_name'])) {
 
             $profile_picture_ext = pathinfo($_FILES["display-picture"]["name"], PATHINFO_EXTENSION);
@@ -113,12 +124,13 @@ session_start();
             $preview_cv = "Preview_" . date("dmYhis") . "." . $preview_cv_ext;
         } else {
             $preview_cv = $edit_cv;
-            $preview_cv_ext = "jpg";
+            $preview_cv_ext = "pdf";
         }
+
 
         if (!in_array($profile_picture_ext, $accepted_image)) {
             echo "<script>alert('please enter valid image file extension like .jpg ,.jpeg or .png ');</script>";
-        } elseif (!in_array($preview_cv_ext, $accepted_image)) {
+        } elseif (!in_array($preview_cv_ext, $accepted_pdf)) {
             echo "<script>alert('please enter valid image file extension like .jpg ,.jpeg or .png ');</script>";
         }
         $update_query = "UPDATE sellernotes SET Title = '{$save_title}', ";
@@ -132,13 +144,94 @@ session_start();
         $update_query .= "Professor = '{$save_professor}', ";
         $update_query .= "IsPaid = $save_sell, ";
         $update_query .= "SellingPrice = $save_sell_price, ";
-        $update_query .= "DisplayPicture = '{$edit_dp}', ";
-        $update_query .= "NotesPreview = '{$edit_cv}' ";
+        $update_query .= "DisplayPicture = '{$profile_picture}', ";
+        $update_query .= "NotesPreview = '{$preview_cv}' ";
         $update_query .= "WHERE ID= $note_id ";
         $update_select_query = mysqli_query($conn, $update_query);
         if (!($update_select_query)) {
             die("QUERY FAILED" . mysqli_error($conn));
         } else {
+
+            $atta_count = count($_FILES['notes-data']['name']);
+            print_r($_FILES['notes-data']['name']);
+            if ($attachment_temp[0] != "") {
+                $get_attachment = mysqli_query($conn, "SELECT * FROM sellernotesattachements WHERE NoteID = '$note_id'");
+                if (!($get_attachment)) {
+                    die("QUERY FAILED" . mysqli_error($conn));
+                } else {
+
+                    $att_count = mysqli_num_rows($get_attachment);
+                    echo "<script> alert('happy')</script>";
+                    while ($atta_data = mysqli_fetch_assoc($get_attachment)) {
+                        $atta_name = $atta_data['FileName'];
+                        if (file_exists("../Members/$user_id/$note_id/Attachements/$atta_name")) {
+                            unlink("../Members/$user_id/$note_id/Attachements/$atta_name");
+                        }
+                    }
+                    $delete_atta = mysqli_query($conn, "DELETE FROM sellernotesattachements WHERE NoteID = '$note_id'");
+                    if (!($delete_atta)) {
+                        die("QUERY FAILED" . mysqli_error($conn));
+                    }
+                }
+            }
+
+            if ($attachment_temp[0] != "") {
+
+                for ($i = 0; $i < $atta_count; $i++) {
+                    $notes_data_filename = $_FILES['notes-data']['name'][$i];
+                    $notes_data_filetemp = $_FILES['notes-data']['tmp_name'][$i];
+
+                    $note_date_fileext = explode('.', $notes_data_filename);
+                    $note_data_filecheck = strtolower(end($note_date_fileext));
+                    $note_data_ext = end($note_date_fileext);
+
+                    if (in_array($note_data_filecheck, $accepted_pdf)) {
+
+                        $store_name_atta = "Attachement_" . $i . "_" . date("dmyhis") . "." . $note_data_ext;
+                        $atta_path = "../Members/$user_id/$note_id/Attachements/$store_name_atta";
+
+                        $insert_attachements = "INSERT INTO `sellernotesattachements`(`NoteID`, `FileName`, `FilePath`, `CreatedDate`, `CreatedBy`, `ModifiedDate`, `ModifiedBy`, `IsActive`) VALUES ($note_id, '$store_name_atta', '$atta_path', current_timestamp(), '$user_id', current_timestamp(), '$user_id', b'1')";
+
+                        date_default_timezone_set('Asia/Kolkata');
+
+                        if (!is_dir("../Members/$user_id/$note_id/Attachements")) {
+                            mkdir("../Members/$user_id/$note_id/Attachements", 0777, true);
+                        }
+                        move_uploaded_file($notes_data_filetemp, "../Members/$user_id/$note_id/Attachements/$store_name_atta");
+
+                        $ins_atta_query = mysqli_query($conn, $insert_attachements);
+                        if (!($ins_atta_query)) {
+                            die("QUERY FAILED" . mysqli_error($conn));
+                        }
+                    } else {
+    ?>
+                        <script>
+                            alert("select proper file type for note attachements")
+                        </script>
+                <?php
+                    }
+                } // for loop over
+            }
+
+            if ($profile_picture != $edit_dp) {
+                if (file_exists("../Members/$user_id/$note_id/$edit_dp")) {
+                    unlink("../Members/$user_id/$note_id/$edit_dp");
+                    move_uploaded_file($profile_picture_tmp, "../Members/$user_id/$note_id/$profile_picture");
+                } else {
+                    move_uploaded_file($profile_picture_tmp, "../Members/$user_id/$note_id/$profile_picture");
+                }
+            }
+
+            if ($preview_cv != $edit_cv) {
+                if (file_exists("../Members/$user_id/$note_id/$edit_cv")) {
+                    unlink("../Members/$user_id/$note_id/$edit_cv");
+                    move_uploaded_file($preview_cv_tmp, "../Members/$user_id/$note_id/$preview_cv");
+                } else {
+                    move_uploaded_file($preview_cv_tmp, "../Members/$user_id/$note_id/$preview_cv");
+                }
+            }
+
+
             header('location:dashboard.php');
         }
     }
@@ -165,7 +258,7 @@ session_start();
             $mail->Body = "Hello Admins,<br><br> We want to inform you that, $seller_name sent his note <br> $note_title for review. Please look at the notes and take required actions. <br><br> Regards,<br>Notes Marketplace";
 
             if (!$mail->send()) {
-    ?>
+                ?>
                 <script>
                     alert('somthing went wrong');
                 </script>
