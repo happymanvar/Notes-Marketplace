@@ -68,10 +68,10 @@
                                     <a class="dropdown-item" href="my-sold-notes.php">My Sold Notes</a>
                                     <a class="dropdown-item" href="my-rejected-notes.php">My Rejected Notes</a>
                                     <a class="dropdown-item" href="../change-password.php">Change Password</a>
-                                    <a class="dropdown-item logout" href="http://localhost/Notes-marketplace/SRS_Notes/logout.php">Logout</a>
+                                    <a class="dropdown-item logout btn-logout" href="../logout.php">Logout</a>
                                 </div>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="http://localhost/Notes-marketplace/SRS_Notes/logout.php">Logout</a></li>
+                            <li class="nav-item"><a class="nav-link btn-logout" href="../logout.php">Logout</a></li>
                         </ul>
 
                     </div>
