@@ -39,6 +39,10 @@ session_start();
 
     include 'db_conntect.php';
     include 'send_mail.php';
+    $account_created = 0;
+
+    $host = $_SERVER['HTTP_HOST'];
+    $path = rtrim(dirname($_SERVER['PHP_SELF']), "/\\");
 
     if (isset($_POST['submit'])) {
         $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
@@ -101,7 +105,7 @@ session_start();
                     </tr>
                     <tr style='height: 120px;font-size: 16px;font-weight: 400;line-height: 22px;color: #333333;margin-bottom: 50px;'>
                         <td style='text-align: center;'>
-                            <button class='btn btn-verify' style='width: 100% !important;height:50px;font-family: Open Sans; font-size: 18px;font-weight: 600;line-height: 22px;color: #fff;background-color: #6255a5;border-radius: 3px;'><a class='btn' href='http://localhost/Notes-marketplace/SRS_Notes/front/activation.php?token=$token' role='button' style='color: #fff; text-decoration: none; text-transform: uppercase;'>Verify email address</a>
+                            <button class='btn btn-verify' style='width: 100% !important;height:50px;font-family: Open Sans; font-size: 18px;font-weight: 600;line-height: 22px;color: #fff;background-color: #6255a5;border-radius: 3px;'><a class='btn' href='http://$host$path/activation.php?token=$token' role='button' style='color: #fff; text-decoration: none; text-transform: uppercase;'>Verify email address</a>
                             </button>
                         </td>
                     </tr>
@@ -109,6 +113,7 @@ session_start();
                 </table>";
 
                     $mail->send();
+                    $account_created = 1;
                     $_SESSION['msg'] = "check your mail to activate your account $email";
             ?>
                     <script>
@@ -147,7 +152,6 @@ session_start();
                     <img src="images/pre-login/top-logo.png" alt="logo">
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-md-12 col-12 col-sm-12 col-lg-12">
                     <div class="form-content">
@@ -158,7 +162,9 @@ session_start();
                                     <p class="text-center">Enter your details to Signup</p>
 
                                 </div>
-                                <p class="text-center success"><i class="fa fa-check-circle" aria-hidden="true"></i> Your account has
+                                <p class="text-center success" <?php if ($account_created != 1) {
+                                                                    echo "hidden";
+                                                                } ?>><i class="fa fa-check-circle" aria-hidden="true"></i> Your account has
                                     been
                                     successfully created.</p>
                             </div>
@@ -190,7 +196,7 @@ session_start();
                                     <div class="form-row">
                                         <div class="form-group col-12 col-md-12 col-lg-12 col-sm-12">
                                             <label for="password">Password</label>
-                                            <input id="password" name="password" type="password" class="form-control" name="password" placeholder="Enter your Password" required>
+                                            <input id="password" type="password" class="form-control" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,24}" title="Must contain at least one number and one uppercase one special character and lowercase letter, and at least 6 or more characters" placeholder="Enter your Password" required>
                                             <img src="images/pre-login/eye.png" toggle="#password" class="field-icon toggle-password" />
                                         </div>
 
@@ -199,14 +205,15 @@ session_start();
                                     <div class="form-row">
                                         <div class="form-group col-12 col-md-12 col-lg-12 col-sm-12">
                                             <label for="con_password">Confirm Password</label>
-                                            <input id="con_password" name="cpassword" type="password" class="form-control" name="password" placeholder="Re-enter your Password" required>
+                                            <input id="con_password" name="cpassword" type="password" class="form-control" placeholder="Re-enter your Password" title="password and confirm password do not match" required>
                                             <img src="images/pre-login/eye.png" toggle="#con_password" class="field-icon toggle-password" />
+
                                         </div>
                                     </div>
 
                                     <!-- login btn -->
                                     <div class="head-button form-group">
-                                        <button type="submit" name="submit" class="btn pre-login-btns">Sign Up</button>
+                                        <button type="submit" name="submit" class="btn pre-login-btns" onclick="return validation()">Sign Up</button>
                                     </div>
                                     <!-- login -->
                                     <p class="text-center sign-up-text">Already have an Account? <a href="../login.php">Login</a>
@@ -232,6 +239,50 @@ session_start();
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+
+
+    <script>
+        var validstring = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,24}$/g;
+
+        var password = document.getElementById('password');
+        var confirmpassword = document.getElementById('con_password');
+
+        function validation() {
+
+
+            if (password.value != confirmpassword.value) {
+                return false;
+            }
+            if (password.value.match(decimal)) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        password.onkeyup = function() {
+
+            if (password.value.match(validstring)) {
+                password.classList.remove("invalid-border");
+                password.classList.add("valid-border");
+            } else {
+                password.classList.remove("valid-border");
+                password.classList.add("invalid-border");
+            }
+
+        }
+
+        confirmpassword.onkeyup = function() {
+            if (confirmpassword.value == password.value) {
+                confirmpassword.classList.remove("invalid-border");
+                confirmpassword.classList.add("valid-border");
+            } else {
+                confirmpassword.classList.remove("valid-border");
+                confirmpassword.classList.add("invalid-border");
+            }
+        }
+    </script>
 
 </body>
 
