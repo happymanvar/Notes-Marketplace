@@ -264,6 +264,7 @@ $page = 'search-notes';
                         'country': country,
                         'rating': rating,
                         'search-notes': title,
+                        'input': "input",
                         'dropdown': "dropdown",
                         'page': page
                     },
@@ -284,6 +285,7 @@ $page = 'search-notes';
                 var course = $('#course').val();
                 var country = $('#country').val();
                 var rating = $('#rating').val();
+                var title = $('input').val();
 
                 $.ajax({
                     url: "filter_notes.php",
@@ -295,7 +297,9 @@ $page = 'search-notes';
                         'course': course,
                         'country': country,
                         'rating': rating,
+                        'search-notes': title,
                         'dropdown': "dropdown",
+                        'input': "input",
                         'page': page
                     },
                     dataType: "text",
