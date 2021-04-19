@@ -7,7 +7,6 @@ if (isset($_SESSION['is_loggedin'])) {
     header('location:login.php');
 }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -73,7 +72,7 @@ if (isset($_SESSION['is_loggedin'])) {
     ?>
                         <script>
                             alert("password changed successfully!! you can login with new password!")
-                            window.location.href = "http://localhost/Notes-marketplace/SRS_Notes/logout.php";
+                            window.location.href = "logout.php";
                         </script>
     <?php
 
@@ -127,7 +126,7 @@ if (isset($_SESSION['is_loggedin'])) {
                                     <div class="form-row">
                                         <div class="form-group col-12 col-md-12 col-lg-12 col-sm-12">
                                             <label for="new-password">New Password</label>
-                                            <input id="new-password" type="password" class="form-control" name="newpassword" placeholder="Enter your new Password" required>
+                                            <input id="new-password" type="password" class="form-control" name="newpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,24}" title="Must contain at least one number and one uppercase one special character and lowercase letter, and at least 6 or more characters" placeholder="Enter your new Password" required>
                                             <img src="front/images/pre-login/eye.png" toggle="#new-password" class="field-icon toggle-password" />
                                         </div>
                                     </div>
@@ -135,7 +134,7 @@ if (isset($_SESSION['is_loggedin'])) {
                                     <div class="form-row">
                                         <div class="form-group col-12 col-md-12 col-lg-12 col-sm-12">
                                             <label for="confirm-new-password">Confirm Password</label>
-                                            <input id="confirm-new-password" type="password" class="form-control" name="confirmpassword" placeholder="Enter your confirm Password" required>
+                                            <input id="confirm-new-password" type="password" class="form-control" name="confirmpassword" title="password and confirm password do not match" placeholder="Enter your confirm Password" required>
                                             <img src="front/images/pre-login/eye.png" toggle="#confirm-new-password" class="field-icon toggle-password" />
                                         </div>
                                     </div>
@@ -143,7 +142,7 @@ if (isset($_SESSION['is_loggedin'])) {
                                     <!-- submit btn -->
                                     <div class="head-button">
                                         <!--<a class="btn pre-login-btns" id="change-pass-btn" href="#" title="submit" role="button">Submit</a>-->
-                                        <button type="submit" name="submit" class="btn pre-login-btns">submit</button>
+                                        <button type="submit" name="submit" class="btn pre-login-btns" onclick="return validation()">submit</button>
                                     </div>
                                 </form>
                             </div>
@@ -164,6 +163,50 @@ if (isset($_SESSION['is_loggedin'])) {
     <!-- Custom JS -->
     <script src="front/js/script.js"></script>
 
+
+    <script>
+        var validstring = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,24}$/g;
+
+        var old_password = document.getElementById('old-password');
+
+        var password = document.getElementById('new-password');
+        var confirmpassword = document.getElementById('confirm-new-password');
+
+        function validation() {
+
+            if (password.value != confirmpassword.value) {
+                return false;
+            }
+            if (password.value.match(decimal)) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        password.onkeyup = function() {
+
+            if (password.value.match(validstring)) {
+                password.classList.remove("invalid-border");
+                password.classList.add("valid-border");
+            } else {
+                password.classList.remove("valid-border");
+                password.classList.add("invalid-border");
+            }
+
+        }
+
+        confirmpassword.onkeyup = function() {
+            if (confirmpassword.value == password.value && confirmpassword.value.match(validstring)) {
+                confirmpassword.classList.remove("invalid-border");
+                confirmpassword.classList.add("valid-border");
+            } else {
+                confirmpassword.classList.remove("valid-border");
+                confirmpassword.classList.add("invalid-border");
+            }
+        }
+    </script>
 </body>
 
 </html>
