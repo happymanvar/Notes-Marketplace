@@ -99,3 +99,13 @@ $(document).ready(function() {
 
     });
 });
+
+$(function() {
+    $('.btn-logout').click(function() {
+        if (confirm("Are you sure want to logout?")) {
+            return true;
+        } else {
+            return false;
+        }
+    })
+})
