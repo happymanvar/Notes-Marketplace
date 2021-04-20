@@ -109,7 +109,6 @@ include 'db_conntect.php';
                         <!-- note Table 01 -->
                         <div class="note-table">
                             <div class="note-image">
-                                <!--<img src="images/Search/1.jpg" alt="notecoverimage" class="img-responsive">-->
                                 <?php
                                 if ($dpname != "") {
                                     echo "<img src='../Members/$userid/$noteid/$dpname' alt='notecoverimage' class='img-responsive'>";
