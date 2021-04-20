@@ -161,13 +161,9 @@ if (!isset($_SESSION['is_loggedin'])) {
                     if ($inotequery) {
                         $is_note_inserted = "true";
                         $last_inserted_id = mysqli_insert_id($conn);
-                        // echo "last entry paid id:" . $last_inserted_id;
-                        // echo "last entry paid id:" . $last_inserted_id;
+
                         $_SESSION['last_id'] = $last_inserted_id;
                         $_SESSION['note_title'] = $title;
-
-                        // echo $_SESSION['last_id'];
-                        // echo $_SESSION['note_title'];
                     } else {
                 ?>
                         <script>
@@ -195,12 +191,8 @@ if (!isset($_SESSION['is_loggedin'])) {
                     $is_note_inserted = "true";
                     $last_inserted_id = mysqli_insert_id($conn);
 
-                    //  echo "last entry paid id:" . $last_inserted_id;
                     $_SESSION['last_id'] = $last_inserted_id;
                     $_SESSION['note_title'] = $title;
-                    // echo "happy";
-                    // echo $_SESSION['last_id'];
-                    // echo $_SESSION['note_title'];
                 } else {
                 ?>
                     <script>
@@ -221,7 +213,7 @@ if (!isset($_SESSION['is_loggedin'])) {
                 // notes atteachments file data
 
                 $atta_count = count($_FILES['notes-data']['name']);
-                echo $atta_count;
+
                 for ($i = 0; $i < $atta_count; $i++) {
                     $notes_data_filename = $_FILES['notes-data']['name'][$i];
                     $notes_data_filetemp = $_FILES['notes-data']['tmp_name'][$i];
@@ -316,7 +308,7 @@ if (!isset($_SESSION['is_loggedin'])) {
                 </script>
             <?php
             } else {
-                header('location:http://localhost/Notes-marketplace/SRS_Notes/front/dashboard.php');
+                header('location:dashboard.php');
             }
         } else {
             ?>
