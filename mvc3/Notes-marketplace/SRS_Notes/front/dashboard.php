@@ -207,7 +207,7 @@ $page = 'dashboard';
                                             if ($progress_row["s_id"] == 6) {
                                                 echo "<td><a href='edit-notes.php?edit=$id'><img src='images/Dashboard/edit.png' alt='edit'><a href='?delete=$id' id='dlt-link' onclick='return chk()'><img src='images/Dashboard/delete.png' alt='delete'></td>";
                                             } else {
-                                                echo "<td><a href='http://localhost/Notes-marketplace/SRS_Notes/front/notes-details.php?id=$id'><img src='images/Dashboard/eye.png' alt='view'></td>";
+                                                echo "<td><a href='notes-details.php?id=$id'><img src='images/Dashboard/eye.png' alt='view'></td>";
                                             } ?>
                                         </tr>
                                     <?php
@@ -284,7 +284,7 @@ $page = 'dashboard';
                                             <td><?php
                                                 if ($progress_row1["s_id"] == 9) {
                                                     $nid = $progress_row1["id"];
-                                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://localhost/Notes-marketplace/SRS_Notes/front/notes-details.php?id=$nid'><img src='images/dashboard/eye.png' alt='view'></a>";
+                                                    echo "&nbsp;&nbsp;&nbsp;&nbsp;<a href='notes-details.php?id=$nid'><img src='images/dashboard/eye.png' alt='view'></a>";
                                                 } ?></td>
                                         </tr>
                                     <?php
@@ -335,7 +335,11 @@ $page = 'dashboard';
                         next: '<img src="images/Search/right-arrow.png">',
                         previous: '<img src="images/Search/left-arrow.png">'
                     }
-                }
+                },
+                columnDefs: [{
+                    targets: [4],
+                    orderable: false,
+                }]
             });
 
             $('.search-btn1').click(function() {
@@ -356,7 +360,11 @@ $page = 'dashboard';
                         next: '<img src="images/Search/right-arrow.png">',
                         previous: '<img src="images/Search/left-arrow.png">'
                     }
-                }
+                },
+                columnDefs: [{
+                    targets: [5],
+                    orderable: false,
+                }]
             });
 
             $('.search-btn2').click(function() {
