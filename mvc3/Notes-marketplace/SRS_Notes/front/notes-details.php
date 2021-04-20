@@ -350,66 +350,72 @@ session_start();
                                 <div class="review-container col-md-12 col-lg-12 col-12">
                                     <div clas="note-reviews" style="overflow-y: auto; overflow-x: hidden;">
                                         <?php
-                                        $getreviews = "SELECT * FROM sellernotesreviews WHERE NoteID = $noteid";
+                                        $getreviews = "SELECT * FROM sellernotesreviews WHERE NoteID = $noteid ORDER BY Ratings DESC,CreatedDate DESC";
                                         $reviewquery = mysqli_query($conn, $getreviews);
-                                        while ($reviewdata = mysqli_fetch_assoc($reviewquery)) {
-                                            $reviewerid = $reviewdata['ReviewedByID'];
-                                            $reviewratingcount = $reviewdata['Ratings'];
-                                            $reviewdesc = $reviewdata['Comments'];
+                                        if (mysqli_num_rows($reviewquery) == 0) {
+                                            echo '<h3 style="color:#6255a5;text-align: center;">No Reviews</h3>';
+                                        } else {
+                                            while ($reviewdata = mysqli_fetch_assoc($reviewquery)) {
+                                                $reviewerid = $reviewdata['ReviewedByID'];
+                                                $reviewratingcount = $reviewdata['Ratings'];
+                                                $reviewdesc = $reviewdata['Comments'];
+                                                $reviewratingcount = round($reviewratingcount);
 
-                                            $getuserdata = "SELECT * FROM users WHERE ID = $reviewerid";
-                                            $userdataquery = mysqli_query($conn, $getuserdata);
-                                            $reviewerdata = mysqli_fetch_assoc($userdataquery);
-                                            $rfirstname = $reviewerdata['FirstName'];
-                                            $rlastname = $reviewerdata['LastName'];
+                                                $getuserdata = "SELECT * FROM users WHERE ID = $reviewerid";
+                                                $userdataquery = mysqli_query($conn, $getuserdata);
+                                                $reviewerdata = mysqli_fetch_assoc($userdataquery);
+                                                $rfirstname = $reviewerdata['FirstName'];
+                                                $rlastname = $reviewerdata['LastName'];
 
                                         ?>
 
-                                            <!-- review 01 -->
-                                            <div class="review">
-                                                <div class="row">
-                                                    <div class="user-image col-md-2 col-2 col-sm-2">
-                                                        <?php
+                                                <!-- review 01 -->
+                                                <div class="review">
+                                                    <div class="row">
+                                                        <div class="user-image col-md-2 col-2 col-sm-2">
+                                                            <?php
 
-                                                        $userdp = "SELECT * FROM user_profile WHERE UserID = $reviewerid";
-                                                        $userdpquery = mysqli_query($conn, $userdp);
-                                                        if (!($userdpquery)) {
-                                                            die("QUERY FAILED" . mysqli_error($conn));
-                                                        } else {
-                                                            $rowdata = mysqli_fetch_assoc($userdpquery);
-                                                            $dpname = $rowdata['Profile Picture'];
-                                                            if ($dpname != "") {
-                                                                echo "<img src='../Members/$reviewerid/$dpname' alt='user' class='img-responsive img-circle'>";
+                                                            $userdp = "SELECT * FROM user_profile WHERE UserID = $reviewerid";
+                                                            $userdpquery = mysqli_query($conn, $userdp);
+                                                            if (!($userdpquery)) {
+                                                                die("QUERY FAILED" . mysqli_error($conn));
                                                             } else {
-                                                                echo "<img src='images/notes-details/reviewer-1.png' alt='user' class='img-responsive img-circle'>";
+                                                                $rowdata = mysqli_fetch_assoc($userdpquery);
+                                                                $dpname = $rowdata['Profile Picture'];
+                                                                if ($dpname != "") {
+                                                                    echo "<img src='../Members/$reviewerid/$dpname' alt='user' class='img-responsive img-circle'>";
+                                                                } else {
+                                                                    echo "<img src='images/notes-details/reviewer-1.png' alt='user' class='img-responsive img-circle'>";
+                                                                }
                                                             }
-                                                        }
 
-                                                        ?>
-                                                    </div>
-                                                    <div class="review-detail col-md-10 col-10 col-sm-10">
-
-                                                        <h4><?php echo $rfirstname . " " . $rlastname; ?></h4>
-                                                        <div class="stars text-left">
-                                                            <?php
-                                                            for ($j = 1; $j <= $reviewratingcount; $j++) { ?>
-                                                                <img src="images/Search/star.png" style="height: 20px;">
-                                                            <?php
-                                                            }
-                                                            for ($k = 1; $k <= 5 - $reviewratingcount; $k++) {
-                                                            ?>
-                                                                <img src="images/Search/star-white.png" style="height: 20px;">
-                                                            <?php
-                                                            }
                                                             ?>
                                                         </div>
-                                                        <p><?php echo $reviewdesc; ?></p>
+                                                        <div class="review-detail col-md-10 col-10 col-sm-10">
+
+                                                            <h4><?php echo $rfirstname . " " . $rlastname; ?></h4>
+                                                            <div class="stars text-left">
+                                                                <?php
+                                                                for ($j = 1; $j <= $reviewratingcount; $j++) { ?>
+                                                                    <img src="images/Search/star.png" style="height: 20px;">
+                                                                <?php
+                                                                }
+                                                                for ($k = 1; $k <= 5 - $reviewratingcount; $k++) {
+                                                                ?>
+                                                                    <img src="images/Search/star-white.png" style="height: 20px;">
+                                                                <?php
+                                                                }
+                                                                ?>
+                                                            </div>
+                                                            <p><?php echo $reviewdesc; ?></p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
                                         <?php
+                                            }
                                         }
                                         ?>
+
 
                                     </div>
                                 </div>
@@ -479,7 +485,7 @@ session_start();
     <script>
         function login() {
             alert("please login first to download note.");
-            window.location.href = "http://localhost/Notes-marketplace/SRS_Notes/login.php";
+            window.location.href = "../login.php";
         }
 
         $('#paid-notes-btn').click(function() {
