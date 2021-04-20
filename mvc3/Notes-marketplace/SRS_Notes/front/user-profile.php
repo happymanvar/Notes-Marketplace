@@ -145,7 +145,7 @@ if (!isset($_SESSION['is_loggedin'])) {
                     if (!empty($profile_picture_filetemp)) {
                         move_uploaded_file($profile_picture_filetemp, "../Members/$user_id/$store_name_dp");
                     }
-                    header('location:http://localhost/Notes-marketplace/SRS_Notes/front/search-notes.php');
+                    header('location:search-notes.php');
                 } else {
                     echo "error";
                 }
@@ -179,7 +179,7 @@ if (!isset($_SESSION['is_loggedin'])) {
                             unlink("../Members/$user_id/$dp_file_name");
                         }
                     }
-                    header('location:http://localhost/Notes-marketplace/SRS_Notes/front/search-notes.php');
+                    header('location:search-notes.php');
                 } else {
                     echo "error update";
                 }
